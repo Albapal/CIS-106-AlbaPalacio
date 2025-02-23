@@ -1,2 +1,2 @@
-# CIS-106- Alba Palacio
-# Computeer Logic And Programming Technology
+# Alba Palacio
+# ix43703@mail.harpercollege.edu
