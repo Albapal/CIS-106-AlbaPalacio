@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Odd Number"/>
+        <attribute name="authors" value="Alba Palacio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-27 09:05:28 p.&#160;m."/>
+        <attribute name="created" value="QWxiYSBQYWxhY2lvO0xBUFRPUC1PQ1IwN0Q4NjsyMDI1LTAzLTI3OzA4OjQ5OjIwIHAuwqBtLjszNzE5"/>
+        <attribute name="edited" value="QWxiYSBQYWxhY2lvO0xBUFRPUC1PQ1IwN0Q4NjsyMDI1LTAzLTI3OzA5OjA1OjI4IHAuwqBtLjsxOzM4Mjg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="startnumber" type="Integer" array="False" size=""/>
+            <assign variable="startnumber" expression="1"/>
+            <while expression="starnumber&lt;=25">
+                <output expression="num" newline="True"/>
+                <assign variable="starnumber" expression="starnumber+2"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

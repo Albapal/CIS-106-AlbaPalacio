@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PS6P3"/>
+        <attribute name="authors" value="Alba Palacio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-29 07:05:22 a.&#160;m."/>
+        <attribute name="created" value="QWxiYSBQYWxhY2lvO0xBUFRPUC1PQ1IwN0Q4NjsyMDI1LTAzLTI4OzA5OjI5OjM4IGEuwqBtLjszNzEz"/>
+        <attribute name="edited" value="QWxiYSBQYWxhY2lvO0xBUFRPUC1PQ1IwN0Q4NjsyMDI1LTAzLTI5OzA3OjA1OjIyIGEuwqBtLjs1OzM4MTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="count" type="Integer" array="False" size=""/>
+            <assign variable="count" expression="0"/>
+            <declare name="employeelastname" type="String" array="False" size=""/>
+            <declare name="hoursworked" type="Real" array="False" size=""/>
+            <assign variable="hoursworked" expression="0"/>
+            <declare name="rateofpay" type="Real" array="False" size=""/>
+            <assign variable="rateofpay" expression="0"/>
+            <declare name="grosspay" type="Real" array="False" size=""/>
+            <assign variable="grosspay" expression="0"/>
+            <declare name="overtimehours" type="Real" array="False" size=""/>
+            <assign variable="overtimehours" expression="0"/>
+            <declare name="totalgrosspay" type="Real" array="False" size=""/>
+            <assign variable="totalgrosspay" expression="0"/>
+            <declare name="totalaverage" type="Real" array="False" size=""/>
+            <assign variable="totalaverage" expression="0"/>
+            <declare name="wanttocontinue" type="String" array="False" size=""/>
+            <output expression="&quot;Do you Want to Continue? Yes / No: &quot;" newline="True"/>
+            <input variable="wanttocontinue"/>
+            <while expression="wanttocontinue=&quot;yes&quot;">
+                <output expression="&quot;Enter the Employee Last Name: &quot;" newline="True"/>
+                <input variable="employeelastname"/>
+                <output expression="&quot;Enter the Hours Worked: &quot;" newline="True"/>
+                <input variable="hoursworked"/>
+                <output expression="&quot;Enter the Rate of Paid: &quot;" newline="True"/>
+                <input variable="rateofpay"/>
+                <if expression="hoursworked&lt;=40">
+                    <then>
+                        <assign variable="grosspay" expression="hoursworked*rateofpay"/>
+                    </then>
+                    <else>
+                        <assign variable="overtimehours" expression="hoursworked-40"/>
+                        <assign variable="overtimehours" expression="overtimehours*1.5"/>
+                        <assign variable="grosspay" expression="(hoursworked+overtimehours)*rateofpay"/>
+                    </else>
+                </if>
+                <output expression="&quot;The Employee Last Name is: &quot;" newline="True"/>
+                <output expression="employeelastname" newline="True"/>
+                <output expression="&quot;The Employee Gross Pay is: &quot;" newline="True"/>
+                <output expression="grosspay" newline="True"/>
+                <assign variable="totalgrosspay" expression="totalgrosspay+grosspay"/>
+                <assign variable="count" expression="count+1"/>
+                <output expression="&quot;Do you Want to Continue? Yes / No: &quot;" newline="True"/>
+                <input variable="wanttocontinue"/>
+            </while>
+            <if expression="count&gt;0">
+                <then>
+                    <assign variable="totalaverage" expression="totalgrosspay/count"/>
+                    <output expression="&quot;The number of employees is: &quot;" newline="True"/>
+                    <output expression="count" newline="True"/>
+                    <output expression="&quot;The Total Gross Pay is: &quot;" newline="True"/>
+                    <output expression="totalgrosspay" newline="True"/>
+                    <output expression="&quot;The Average is: &quot;" newline="True"/>
+                    <output expression="totalaverage" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;No data entered&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
