@@ -1,0 +1,16 @@
+Widget
+10
+50
+Hammer
+2
+10
+Saw
+4
+8
+Screwdriver 
+3
+40
+Power Drill
+2
+80
+

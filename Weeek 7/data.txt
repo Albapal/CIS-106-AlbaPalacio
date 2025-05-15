@@ -1,0 +1,12 @@
+Classen
+130000
+Taylor
+145000
+Smith
+85000
+Scott
+65000
+Moore
+35000
+Walker
+45000
