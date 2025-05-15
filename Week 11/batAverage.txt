@@ -1,0 +1,10 @@
+Jones 0.267
+Baker 0.400
+Smith 0.180
+Adams 0.255
+Davis 0.200
+Michaels 0.123
+Hanks 0.310
+Baez 0.290
+Rizzo 0.198
+Maddon 0.347

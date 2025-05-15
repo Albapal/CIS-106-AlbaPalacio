@@ -1,0 +1,10 @@
+Jones 4.0
+Baker 4.5
+Smith 4.2
+Adams 3.5
+Davis 4.8
+Michaels 3.9
+Hanks 3.7
+Baez 3.9
+Rizzo 4.1
+Maddon 4.3
